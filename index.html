@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №2</title>
+    <meta name="author" content="Poliklot">
+    <meta name="description" content="На данной странице показана лаборатоная работа по предмету: 'Распределённые алгоритмы'. Тема лабораторной работы :'Реализация иерархической маршрутизации'.">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-wrapper">
+            <img src="./android-chrome-512x512.png" alt="Логотип" class="header__logo">
+        </div>
+    </header>
+    <main class="main">
+        <div class="nav">
+            <!-- <button type="button" class="nav__button"></button> -->
+            <div class="nav__container">
+                <span class="nav__title">Панель управления</span>
+                <ul class="nav__controls-list">
+                    <li class="nav__controls-item">
+                        <button type="button" class="nav__button" id="buttonCreateRandomNetwork">Создать рандомную сеть</button>
+                    </li>
+                    <li class="nav__controls-item">
+                        <div class="nav__input-wrapper-two">
+                            <label for="inputNodeFrom" class="visually-hidden">Поле ввода узла от которого нужно отправить пакет</label>
+                            <input type="number" class="nav__input" id="inputNodeFrom" placeholder="Узел от куда">
+                            <label for="inputNodeTo" class="visually-hidden">Поле ввода узла куда нужно отправить пакет</label>
+                            <input type="number" class="nav__input" id="inputNodeTo" placeholder="Узел куда">
+                        </div>
+                        <div class="nav__input-wrapper">
+                            <label for="inputPackageText" class="visually-hidden">Поле ввода маршрута, который нужно искать</label>
+                            <input type="text" class="nav__input" id="inputPackageText" placeholder="Сообщение">
+                            <button type="button" class="nav__button" id="buttonSendMessage">Отправить пакет</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="graph-container"></div>
+    </main>
+    <script src="./scripts/focus-visible.js"></script>
+    <script src="./scripts/vivagraph.js"></script>
+    <script src="./scripts/Node.js"></script>
+    <script src="./scripts/Claster.js"></script>
+    <script src="./scripts/Network.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
